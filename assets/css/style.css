@@ -11,15 +11,18 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/img-bg2.jpg") center no-repeat;
-  background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
-  -webkit-animation: animate-bg 5s ease-in-out infinite;
-  animation: animate-bg 5s ease-in-out infinite;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.75)), url("../img/img-bg2.jpg") center/cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: contrast(1.02) saturate(0.95);
+  /* subtle slow movement to provide depth without distraction */
+  animation: animate-bg 20s ease-in-out infinite;
 }
 
 @keyframes animate-bg {
@@ -27,20 +30,12 @@ body::before {
     transform: translateY(0);
     filter: grayscale(0%);
   }
-  25% {
-    transform: translateY(-10px);
-    filter: grayscale(0%);
-  }
   50% {
-    transform: translateY(-5px);
-    filter: grayscale(0%);
-  }
-  75% {
-    transform: translateY(5px);
+    transform: translateY(-6px);
     filter: grayscale(0%);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
     filter: grayscale(0%);
   }
 }
@@ -199,7 +194,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  text-align: right;
+  text-align: left;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
@@ -213,7 +208,7 @@ h6 {
 }
 
 #header h2 {
-  text-align: right;
+  text-align: left;
   font-size: 26px;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.863);
@@ -253,7 +248,7 @@ h6 {
 
 #header .social-links {
   display: flex;
-  justify-content: end;
+  justify-content: start;
   margin-top: 40px;
 }
 
@@ -382,7 +377,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -1214,7 +1209,7 @@ section .container {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff url(/assets/img/img-bg3\ .jpg) 50% no-repeat;
+  background: #fff url(/assets/img/img-bg3.png) 50% no-repeat;
   background-size: cover;
   filter: brightness(90%);
   -webkit-filter: brightness(90%);
