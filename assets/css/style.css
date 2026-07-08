@@ -47,12 +47,12 @@ body::before {
 }
 
 a {
-  color: #b78700;
+  color: #b75200;
   text-decoration: none;
 }
 
 a:hover {
-  color: #b78700;
+  color: #b75200;
   text-decoration: none;
 }
 
@@ -200,7 +200,7 @@ h6 {
 }
 
 #header h1 span {
-  color: #b78700;
+  color: #b75200;
 }
 
 #header h1 span strong {
@@ -217,7 +217,7 @@ h6 {
 #header h2 span {
   color: #fff;
   font-weight: bold;
-  border-bottom: 2px solid #b78700;
+  border-bottom: 2px solid #b75200;
   padding-bottom: 6px;
 }
 
@@ -267,7 +267,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #b78700;
+  background: #b75200;
 }
 
 @media (max-width: 992px) {
@@ -396,7 +396,7 @@ h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #b78700;
+  background-color: #b75200;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -417,7 +417,7 @@ h6 {
 }
 
 .navbar a#link-hire {
-  color: #b78700;
+  color: #b75200;
   font-weight: bold;
 }
 
@@ -550,7 +550,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #b78700;
+  background: #b75200;
   margin: 4px 10px;
 }
 
@@ -571,7 +571,7 @@ section .container {
 .about-me #profile {
   cursor: pointer;
   border-radius: 50%;
-  border: #b78700 5px solid;
+  border: #b75200 5px solid;
 }
 
 .about-me #profile:hover {
@@ -614,7 +614,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #b78700;
+  color: #b75200;
 }
 
 .about-me .content ul {
@@ -634,7 +634,7 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #b78700;
+  color: #b75200;
   line-height: 0;
 }
 
@@ -674,7 +674,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #b78700;
+  color: #b75200;
   border-radius: 50px;
   line-height: 0;
 }
@@ -726,7 +726,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #b78700;
+  background-color: #b75200;
 }
 
 /*--------------------------------------------------------------
@@ -783,7 +783,7 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #b78700;
+  color: #b75200;
   margin-bottom: 10px;
 }
 
@@ -816,8 +816,8 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #b78700;
-  border: 2px solid #b78700;
+  background: #b75200;
+  border: 2px solid #b75200;
 }
 
 /*--------------------------------------------------------------
@@ -861,7 +861,7 @@ section .container {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #b78700;
+  background: #b75200;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1064,7 +1064,7 @@ section .container {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b78700;
+  background-color: #b75200;
 }
 
 /*--------------------------------------------------------------
@@ -1085,7 +1085,7 @@ section .container {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #b78700;
+  color: #b75200;
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -1108,7 +1108,7 @@ section .container {
 }
 
 .contact .info-box a p:hover {
-  color: #b78700;
+  color: #b75200;
 }
 
 .contact .info-box .social-links {
@@ -1126,7 +1126,7 @@ section .container {
 }
 
 .contact .info-box .social-links a:hover {
-  color: #b78700;
+  color: #b75200;
 }
 
 /*--------------------------------------------------------------
