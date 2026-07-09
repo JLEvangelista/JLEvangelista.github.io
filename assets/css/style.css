@@ -16,7 +16,9 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
-  background: linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.75)), url("../img/img-bg2.jpg") center/cover no-repeat;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
+    url("../img/img-bg2.jpg") center/cover no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -634,7 +636,7 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #b75200;
+  color: #fc7303;
   line-height: 0;
 }
 
@@ -649,6 +651,16 @@ section .container {
 
 .about-me .content p:last-child {
   margin-bottom: 0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: "Raleway";
+}
+
+.bi-info-circle-fill {
+  color: #b75200;
 }
 
 /*--------------------------------------------------------------
@@ -1191,7 +1203,7 @@ section .container {
   --muted-text: #9a9a9a;
   --bg-color: #212121;
   --btn-color: #fff;
-  --offcanvas-bg: rgba(0,0,0,0.9);
+  --offcanvas-bg: rgba(0, 0, 0, 0.9);
   --offcanvas-border-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1227,9 +1239,22 @@ section .container {
 }
 
 @media (max-width: 767px) {
-  #switchTheme{
-      display: flex;
-      justify-content: end;
-      flex-grow: 1;
+  #switchTheme {
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
   }
+}
+
+/* Toggle More Button Custom Styling */
+.toggle-more-btn {
+  border-color: #b75200 !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+.toggle-more-btn:hover {
+  background-color: #b75200 !important;
+  color: #fff !important;
+  border-color: #b75200 !important;
 }

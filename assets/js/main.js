@@ -81,12 +81,6 @@ if (switchThemeBtn)
   /**
    * Intro type effect
    */
-  const about_typed = select(".about-me .typed");
-  if (about_typed) {
-    let typed_strings = about_typed.getAttribute("data-typed-items");
-    typed_strings = typed_strings.split(",");
-    new Typed(".about-me .typed", typedConfig(typed_strings));
-  }
 
   const nickname_typed = select(".nickname .typed");
   if (nickname_typed) {

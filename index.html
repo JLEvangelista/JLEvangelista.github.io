@@ -129,9 +129,7 @@
           </div>
 
           <div class="row">
-            <div
-              class="col-lg-4 d-flex justify-content-center align-items-center"
-            >
+            <div class="col-lg-4">
               <img
                 src="assets/img/image2.jpg"
                 class="img-fluid"
@@ -139,15 +137,10 @@
                 id="profile"
               />
             </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content">
-              <h3 class="text-center my-4">
-                <span class="text-white">I am a</span>
-                <u>
-                  <span
-                    class="typed"
-                    data-typed-items="Programmer, UI/UX Designer, Bassist"
-                  ></span
-                ></u>
+            <div class="col-lg-8 pt-4 pt-lg-0 content card">
+              <h3 class="text-left my-4 px-4">
+                <span class="text-white"> Personal Details</span>
+                <i class="bi bi-person-vcard"></i>
               </h3>
               <div class="row">
                 <div class="col-lg-7">
@@ -176,24 +169,57 @@
                   </ul>
                 </div>
               </div>
-
-              <hr />
-              <br />
-              <h3 class="text-center">Academic Highlights</h3>
               <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-7">
                   <br />
                   <ul>
                     <li>
                       <i class="bi bi-chevron-right"></i>
-                      Consistent with Honors (Highschool & Senior High) at BNCHS
-                    </li>
-                    <br />
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      Dean's Lister 4 Semesters
+                      <strong>Birth Date:</strong>
+                      <span> September 23, 2003 </span>
                     </li>
                   </ul>
+                </div>
+                <div class="col-lg-5">
+                  <br />
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Mobile: Number:</strong>
+                      <span>09310423561 </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr />
+              <h3 class="text-left text-white px-4">
+                About Me <i class="bi bi-info-circle-fill"></i>
+              </h3>
+              <div class="row">
+                <div class="col-lg-12 px-4">
+                  <br />
+                  I am a Junior Web Developer and a Bachelor of Science in
+                  Information Systems (BSIS) graduate with a strong passion for
+                  building responsive and user-friendly web applications. I have
+                  a solid foundation in web development, UI/UX design, system
+                  analysis, and database management, with experience using HTML,
+                  CSS, JavaScript, Vue.js, Supabase, and Figma.
+                  <div class="about-more-content" style="display: none">
+                    <br />Through academic and personal projects, I have
+                    developed practical skills in creating modern web
+                    applications, solving real-world problems, and delivering
+                    intuitive user experiences. As an aspiring developer, I am
+                    eager to continuously learn, enhance my technical expertise,
+                    and contribute to innovative projects while growing
+                    professionally in the field of web development.
+                  </div>
+                  <br />
+                  <button
+                    class="btn btn-sm toggle-more-btn"
+                    style="margin-top: 10px"
+                  >
+                    <i class="bi bi-chevron-down"></i> See More
+                  </button>
                 </div>
               </div>
             </div>
@@ -719,5 +745,27 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- See More Toggle Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.querySelector(".toggle-more-btn");
+        const moreContent = document.querySelector(".about-more-content");
+
+        if (toggleBtn && moreContent) {
+          toggleBtn.addEventListener("click", function () {
+            const isHidden = moreContent.style.display === "none";
+            moreContent.style.display = isHidden ? "block" : "none";
+
+            const icon = toggleBtn.querySelector("i");
+            icon.classList.toggle("bi-chevron-down");
+            icon.classList.toggle("bi-chevron-up");
+
+            toggleBtn.textContent = isHidden ? " See Less" : " See More";
+            toggleBtn.prepend(icon);
+          });
+        }
+      });
+    </script>
   </body>
 </html>
